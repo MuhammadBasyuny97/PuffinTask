@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "079e947d-96ad-4e04-8211-46dd3a1b297d",
+		"name": "Puffin- PostMan- Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26063734"
+	},
+	"item": [
+		{
+			"name": "Data",
+			"item": [
+				{
+					"name": "Get All Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Quote Column",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/data?column_name=author",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"data"
+							],
+							"query": [
+								{
+									"key": "column_name",
+									"value": "author"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Author Column",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/data?column_name=Author",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"data"
+							],
+							"query": [
+								{
+									"key": "column_name",
+									"value": "Author"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Filtered Data",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
