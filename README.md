@@ -33,7 +33,7 @@
   ```bash
     https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/
   ```
-  ```bash
+
 - Testing the API
   ```bash
      Fetch All Data: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data
@@ -49,19 +49,20 @@
 # How to Run the Server Manually on the local Machine
 - 1.Clone the Repo
 - 2.Install the dependencies
-                 ```bash
-                     pip install -r requirements.txt
-                  ```
+      ```bash
+         pip install -r requirements.txt
+     ```
 - 3.Run the server
      ```bash
-          python -m uvicorn app:app --reload
-      ```
+         cd app
+         python -m uvicorn app:app --reload
+     ```
 - 4.Open Postman-Collection and test the API.
 
 - 5.Test the APIs
-   ```bash
+     ```bash
       -Fetch All Data: https:http://127.0.0.1:8000/data
       -Fetch Data of a Column: http://127.0.0.1:8000/data?column_name=Quote
       -Fetch Data with filtered values: http://127.0.0.1:8000/data?column_name=Quote&filter_params={"column_name":Author,"filter_value":Mark Twain}
-    ```
+     ```
 
