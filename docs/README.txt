@@ -1,4 +1,30 @@
-#Database Design
+# PuffinnTask/
+  │
+  ├── app/
+  │   ├── __init__.py
+  │   ├── main.py       # Entry point for your FastAPI application
+  │   ├── database.py   # Database Connection 
+  │   └── QuotesScrapper/       # Web Scrapper
+  │      
+  │
+  ├── deployment_package/   # Where you package your Lambda deployment
+  │   ├── lambda_function.zip   # Deployment package and Lambda handler
+  │   └── ... 
+  │   
+  │
+  ├── docs/              # Documentation files
+  │   ├── README.txt     # API documentation text page
+  │  
+  │  
+  │  
+  │
+  ├── requirements.txt   # List of project dependencies
+  ├── deploy.sh          # Deployment script
+  ├── README.md          # Project README
+  └── ...
+
+
+# Database Design
 
 - SQL
 CREATE TABLE Quotes (
@@ -31,12 +57,12 @@ CREATE TABLE Quotes (
     https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/
 ```
 ```bash
--Fetch All Data: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data
--Fetch Data of a Column: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data?column_name=Quote
--Fetch Data with filtered values: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data?column_name=Quote&filter_params={"column_name":Author,"filter_value":Mark Twain}
+    Fetch All Data: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data
+    Fetch Data of a Column: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data?column_name=Quote
+    Fetch Data with filtered values: https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/data?column_name=Quote&filter_params={"column_name":Author,"filter_value":Mark Twain}
 ```
 ------------------------------------------
-#How to Run the Server Manually on the local Machine
+# How to Run the Server Manually on the local Machine
 - 1.Clone the Repo
 - 2.Install the dependencies
                  ```bash
