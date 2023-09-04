@@ -21,6 +21,7 @@
   ├── requirements.txt   # List of project dependencies
   ├── deploy.sh          # Deployment script
   ├── README.md          # Project README
+  ├── Puffin- PostMan- Collection.postman_collection.json  # Postman Collection
   └── ...
 
 
