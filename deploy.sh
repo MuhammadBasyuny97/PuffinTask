@@ -28,3 +28,12 @@ zip -r deployment_package.zip .
 zip lambda_function.zip -u app.py
 zip lambda_function.zip -u database.py 
 zip lambda_function.zip -u database.py 
+
+
+# Deployment Links
+- Deploying the Database on AWS RDS
+     host: task-postgres.cp0fyahnpwk3.us-east-1.rds.amazonaws.com
+  
+- Deploying FastAPI and Scrapper on AWS Lambda
+     https://lrwzxenqtquo2qhu6vhh3n6ggi0acrqq.lambda-url.us-east-1.on.aws/
+
