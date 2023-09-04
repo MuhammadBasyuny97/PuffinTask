@@ -3,13 +3,14 @@
 # Database Design
 - SQL
    <br/>
+   <br/>
    CREATE TABLE Quotes <br/>
    (<br/>
     ID SERIAL PRIMARY KEY,<br/>
     Quote TEXT NOT NULL,<br/>
     Author TEXT NOT NULL<br/>
-  <br/>
-);
+   );
+
 
 - Table Name: Quotes
 
@@ -49,8 +50,8 @@
 # How to Run the Server Manually on the local Machine
 - 1.Clone the Repo
 - 2.Install the dependencies
-      ```bash
-         pip install -r requirements.txt
+     ```
+      pip install -r requirements.txt
      ```
 - 3.Run the server
      ```bash
